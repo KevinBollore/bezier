@@ -25,7 +25,7 @@ Directories in the project
 | Directory  | Description
 ------------ | -----------
 `bezier` | Meta-package
-`bezier_application` | Example usage of the `bezier_library` for grinding operations on a Fanuc R-1000iA robot.
+`bezier_application` | Example usage of the `bezier_library` for grinding operations on a Fanuc R-1000iA robot
 `bezier_library` | Library containing several path planning algorithms
 
 Dependencies
@@ -35,14 +35,17 @@ Dependencies
 - [`fanuc`](http://wiki.ros.org/fanuc)
 - [`rviz_visual_tools`](https://github.com/davetcoleman/rviz_visual_tools)
 - [`Visualization Toolkit`](https://gitlab.kitware.com/vtk/vtk/) version `7.0` or later
-- [`Point Cloud Library`](https://github.com/PointCloudLibrary/pcl) version `1.8.0` or later. :warning: PCL has to be compiled against the same VTK version that is used for this package.
+- [`Point Cloud Library`](https://github.com/PointCloudLibrary/pcl) version `1.8.0` or later. :warning: PCL has to be compiled against the same VTK version that is used for this package
+- [`Rviz Visual Tools`](https://github.com/davetcoleman/rviz_visual_tools)
 - `C++11` is required 
 
 This package has been tested with Ubuntu 14.04 and ROS Indigo.
 
 Documentation
 -------------
-Please read [bezier_library/doc/README.md](bezier_library/doc/README.md).
+In `bezier_library` folder, there is some classes which needed to be explain:
+- `bezier_library.cpp`, abstract class, documented [here](bezier_library/doc/README_bezier_library.md)
+- `bezier_grinding_surfacing.cpp`, which inherits from `bezier_library.cpp`, documented [here](bezier_library/doc/README_bezier_grinding_surfacing.md)
 
 Quick help
 ----------
